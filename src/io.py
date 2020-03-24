@@ -4,6 +4,8 @@
 from __future__ import print_function, division, absolute_import
 from scipy.io import loadmat
 
+import csv
+
 def file_to_trials(filename):
 	'''Data is stored as several blocks of several trials in a nested structure of nparrays.
 	Returns a list of the individual trial data'''
