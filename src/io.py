@@ -22,7 +22,7 @@ def files_from_csv(filename):
 	'''Takes in a csv sheet from the SummaryDatabase 
 	returns all filenames for relevant neurons listed in the csv'''
 	files = []
-	with open('SummaryDatabase.csv', 'r', newline='') as f:
+	with open(filename, 'r', newline='') as f:
 		reader = csv.reader(f)
 		#ignore first row of labels
 		next(reader)
